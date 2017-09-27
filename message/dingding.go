@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/niwho/udp_server/logs"
+	"udp_server/logs"
 )
 
 var apiUrl = "https://oapi.dingtalk.com/robot/send?access_token=e4fa2ac5d689ec738e46800d4f57df1198fff5df6932e16de96ed0297917a117"

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/niwho/udp_server/logs"
-	"github.com/niwho/udp_server/message"
+	"udp_server/logs"
+	"udp_server/message"
 )
 
 func main() {
