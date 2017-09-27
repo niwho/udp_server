@@ -1,0 +1,38 @@
+{
+	"ImportPath": "udp_server",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/niwho/logprovider",
+			"Rev": "ca6fb8f211cd7d7352ef9151e037c7578e31708f"
+		},
+		{
+			"ImportPath": "github.com/niwho/udp_server/logs",
+			"Comment": "v0.1",
+			"Rev": "c476fa6b1a833cb5e58c62247672c32288e56e0c"
+		},
+		{
+			"ImportPath": "github.com/niwho/udp_server/message",
+			"Comment": "v0.1",
+			"Rev": "c476fa6b1a833cb5e58c62247672c32288e56e0c"
+		},
+		{
+			"ImportPath": "github.com/sirupsen/logrus",
+			"Comment": "v1.0.3-11-g89742ae",
+			"Rev": "89742aefa4b206dcf400792f3bd35b542998eb3b"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ssh/terminal",
+			"Rev": "81e90905daefcd6fd217b62423c0908922eadb30"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "a45f55524b7ec57890cfa6c6bc06b47f877be0d1"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows",
+			"Rev": "a45f55524b7ec57890cfa6c6bc06b47f877be0d1"
+		}
+	]
+}
