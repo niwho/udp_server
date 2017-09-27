@@ -12,7 +12,12 @@ import (
 
 func main() {
 	var port int
+	var ignore string
 	flag.IntVar(&port, "port", 5678, "")
+	flag.StringVar(&ignore, "conf", "", "")
+	flag.StringVar(&ignore, "rpc", "", "")
+	flag.StringVar(&ignore, "log", "", "")
+	flag.StringVar(&ignore, "svc", "", "")
 	flag.Parse()
 	logs.InitLog("udp_ss.log", logs.L(5))
 	af := NewAsyncFrame(1024, handleMsg)

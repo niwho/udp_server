@@ -18,6 +18,10 @@ if [ "$IS_HOST_NETWORK" == "1" ]; then
      PORT=$PORT0
 fi
 
+if [ "X$PORT" == "X" ]; then
+    PORT=5678
+fi
+
 RUNTIME_CONF_ROOT=$RUNTIME_ROOT/conf
 RUNTIME_LOG_ROOT=$RUNTIME_ROOT/log
 STDOUT_LOG_FILE=$RUNTIME_LOG_ROOT/pusic_push_strategy.std.log
@@ -54,5 +58,5 @@ LOG_DIR=$RUNTIME_LOG_ROOT
 
 export GOGC=300
 # real exec
-echo $CURDIR/bin/pusic_monitor_agent -conf="$CONF_FILE" -rpc="$RPC_CONF_DIR" -log="$LOG_DIR" -svc="$SVC_NAME" -port="${PORT}"
-exec $CURDIR/bin/pusic_monitor_agent  -conf="$CONF_FILE" -rpc="$RPC_CONF_DIR" -log="$LOG_DIR" -svc="$SVC_NAME" -port="${PORT}"
+echo $CURDIR/bin/pusic_monitor_agent -conf="$CONF_FILE" -rpc="$RPC_CONF_DIR" -log="$LOG_DIR" -svc="$SVC_NAME" -port=${PORT}
+exec $CURDIR/bin/pusic_monitor_agent  -conf="$CONF_FILE" -rpc="$RPC_CONF_DIR" -log="$LOG_DIR" -svc="$SVC_NAME" -port=${PORT}
