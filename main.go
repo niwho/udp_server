@@ -46,7 +46,7 @@ func handleMsg(b []byte) {
 	}
 	switch am.MType {
 	case "dingding":
-		message.SendDD(am.Title, am.Content, am.At)
+		message.SendDD(am.Title, am.Content, am.At, am.Token)
 	case "kafka":
 		break
 	case "influx":
